@@ -2,12 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Outlet } from 'react-router-dom';
 import Navigation from './Navigation';
-import SimpleParticles from './SimpleParticles';
+import PrismsBackground from './PrismsBackground';
 
 const Layout = () => {
   return (
     <div className="min-h-screen gradient-hero relative">
-      <SimpleParticles />
+      <PrismsBackground />
       <Navigation />
       <motion.main
         className="relative z-10"
