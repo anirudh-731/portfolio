@@ -7,15 +7,15 @@ import Scene3D from '@/components/Scene3D';
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 pt-20">
+    <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 pt-20">
       <div className="container mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="space-y-8"
+            className="space-y-8 text-center lg:text-left"
           >
             {/* Greeting */}
             <motion.div
@@ -24,10 +24,10 @@ const Hero = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="space-y-2"
             >
-              <h1 className="text-6xl lg:text-7xl font-bold text-gradient">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gradient mt-4">
                 Anirudh M Rao
               </h1>
-              <h2 className="text-3xl lg:text-4xl font-semibold text-foreground/90">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground/90">
                 Full Stack Developer
               </h2>
             </motion.div>
@@ -37,7 +37,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-xl text-muted-foreground leading-relaxed max-w-lg"
+              className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-full lg:max-w-lg mx-auto lg:mx-0"
             >
               I create exceptional digital experiences through innovative web development,
               combining creativity with cutting-edge technology to bring ideas to life.
@@ -48,7 +48,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4"
             >
               <Button
                 asChild
@@ -66,12 +66,11 @@ const Hero = () => {
                 size="lg"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
               >
-                <a href="/Anirudh_Resume.pdf" download className="flex items-center">
+                <a href="/Anirudh_Resume.pdf" download className="flex items-center justify-center">
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </a>
               </Button>
-
             </motion.div>
 
             {/* Quick Links */}
@@ -79,7 +78,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="flex items-center space-x-6"
+              className="flex flex-col sm:flex-row items-center sm:items-start justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-6"
             >
               <Link
                 to="/projects"
@@ -102,22 +101,22 @@ const Hero = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-            className="relative"
+            className="relative flex justify-center lg:justify-end"
           >
-            <div className="relative gradient-card rounded-2xl p-8 glow-primary">
-              <Scene3D className="w-full h-96" />
+            <div className="relative gradient-card rounded-2xl p-6 sm:p-8 glow-primary w-full max-w-md sm:max-w-lg">
+              <Scene3D className="w-full h-64 sm:h-80 md:h-96" />
 
               {/* Floating elements */}
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute -top-4 -right-4 w-16 h-16 bg-accent/20 rounded-full glow-cyan"
+                className="absolute -top-4 -right-4 w-12 h-12 sm:w-16 sm:h-16 bg-accent/20 rounded-full glow-cyan"
               />
 
               <motion.div
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-2 -left-2 w-12 h-12 bg-neon-purple/30 rounded-full glow-purple"
+                className="absolute -bottom-2 -left-2 w-10 h-10 sm:w-12 sm:h-12 bg-neon-purple/30 rounded-full glow-purple"
               />
             </div>
           </motion.div>

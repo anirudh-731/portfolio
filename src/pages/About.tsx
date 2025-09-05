@@ -10,7 +10,7 @@ const About = () => {
   };
 
   return (
-    <div className="min-h-screen pt-24 pb-16 px-6 pl-1">
+    <div className="min-h-screen pt-24 pb-16 px-6 pl-[21px]">
       <div className="container mx-auto max-w-4xl">
         {/* Header */}
         <motion.div
@@ -50,70 +50,67 @@ const About = () => {
             className="space-y-6"
           >
             <h2 className="text-3xl font-bold text-foreground">
-              Hello! I'm a Full Stack Developer
+              Hello! I'm a Software Developer
             </h2>
             
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                With a strong foundation in development, I specialize in building modern, responsive, and user-friendly applications using technologies like React, Next.js, Node.js, and cloud deployment platforms.
+                With a strong foundation in development, I specialize in building modern, responsive, and user-friendly applications using technologies like React, Next.js, Node.js, and cloud deployment platforms. Driven by curiosity and creativity, I craft digital experiences that are both functional and visually engaging, turning real-world problems into innovative solutions.
               </p>
-              <p>
-                I enjoy combining creativity with cutting-edge tools to create digital experiences that are functional & visually engaging. My journey started with a curiosity about how software applicatons work, and it has grown into a passion for solving real-world problems through innovative development. 
-              </p>
-              
             </div>
           </motion.div>
         </div>
 
         {/* What I Do */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
-          className="space-y-12"
-        >
-          <h2 className="text-4xl font-bold text-center text-foreground mb-12">
-            What I Do
-          </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Code2,
-                title: "Full Stack Development",
-                description: "Building end-to-end web applications with modern frameworks and technologies."
-              },
-              {
-                icon: Palette,
-                title: "UI/UX Design",
-                description: "Creating intuitive and visually appealing user interfaces that enhance user experience."
-              },
-              {
-                icon: Rocket,
-                title: "Performance Optimization",
-                description: "Optimizing applications for speed, scalability, and optimal user performance."
-              }
-            ].map((service, index) => (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 + index * 0.1, duration: 0.6, ease: "easeOut" }}
-                className="gradient-card rounded-xl p-6 text-center group hover:glow-primary transition-all duration-300"
-              >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/20 rounded-full mb-4 group-hover:scale-110 transition-transform">
-                  <service.icon className="w-8 h-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {service.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
+  className="space-y-12 ml-[24px]"
+>
+  <h2 className="text-4xl font-bold text-center text-foreground mb-12">
+    What I Do
+  </h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+    {[
+      {
+        icon: Code2,
+        title: "Software Development",
+        description: "Building end-to-end web applications with modern frameworks and technologies."
+      },
+      {
+        icon: Palette,
+        title: "UI/UX Design",
+        description: "Creating intuitive and visually appealing user interfaces that enhance user experience."
+      },
+      {
+        icon: Rocket,
+        title: "Performance Optimization",
+        description: "Optimizing applications for speed, scalability, and optimal user performance."
+      }
+    ].map((service, index) => (
+      <motion.div
+        key={service.title}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6 + index * 0.1, duration: 0.6, ease: "easeOut" }}
+        className="gradient-card rounded-xl p-6 text-center group hover:glow-primary transition-all duration-300"
+      >
+        <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/20 rounded-full mb-4 group-hover:scale-110 transition-transform">
+          <service.icon className="w-8 h-8 text-primary" />
+        </div>
+        <h3 className="text-xl font-semibold text-foreground mb-3">
+          {service.title}
+        </h3>
+        <p className="text-muted-foreground leading-relaxed">
+          {service.description}
+        </p>
+      </motion.div>
+    ))}
+  </div>
+</motion.div>
+
       </div>
     </div>
   );
