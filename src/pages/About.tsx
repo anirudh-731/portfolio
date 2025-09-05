@@ -10,7 +10,7 @@ const About = () => {
   };
 
   return (
-    <div className="min-h-screen pt-24 pb-16 px-6">
+    <div className="min-h-screen pt-24 pb-16 px-6 pl-1">
       <div className="container mx-auto max-w-4xl">
         {/* Header */}
         <motion.div
