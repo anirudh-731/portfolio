@@ -49,11 +49,11 @@ const About = () => {
     transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
     className="space-y-4 sm:space-y-6 text-center lg:text-left"
   >
-    <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
+    <h2 className="text-4xl sm:text-3xl font-bold text-foreground pb-2">
       Hello! I'm a Software Developer
     </h2>
 
-    <div className="space-y-3 sm:space-y-4 text-muted-foreground leading-relaxed text-sm sm:text-base">
+    <div className="space-y-2 sm:space-y-4 text-muted-foreground leading-relaxed text-sm sm:text-base">
       <p>
         With a strong foundation in development, I specialize in building modern, responsive, and user-friendly applications using technologies like React, Next.js, Node.js, and cloud deployment platforms. Driven by curiosity and creativity, I craft digital experiences that are both functional and visually engaging, turning real-world problems into innovative solutions.
       </p>
@@ -63,13 +63,13 @@ const About = () => {
 
 
         {/* What I Do */}
-        <motion.div
+       <motion.div
   initial={{ opacity: 0, y: 40 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
-  className="space-y-12 ml-[24px]"
+  className="space-y-10 px-4 sm:px-6 md:px-8"
 >
-  <h2 className="text-4xl font-bold text-center text-foreground mb-12">
+  <h2 className="text-4xl sm:text-4xl font-bold text-center text-foreground mb-8">
     What I Do
   </h2>
 
@@ -96,21 +96,22 @@ const About = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6 + index * 0.1, duration: 0.6, ease: "easeOut" }}
-        className="gradient-card rounded-xl p-6 text-center group hover:glow-primary transition-all duration-300"
+        className="gradient-card rounded-xl p-6 sm:p-8 text-center group hover:glow-primary transition-all duration-300"
       >
-        <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/20 rounded-full mb-4 group-hover:scale-110 transition-transform">
-          <service.icon className="w-8 h-8 text-primary" />
+        <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-primary/20 rounded-full mb-4 group-hover:scale-110 transition-transform">
+          <service.icon className="w-8 sm:w-10 h-8 sm:h-10 text-primary" />
         </div>
-        <h3 className="text-xl font-semibold text-foreground mb-3">
+        <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-3">
           {service.title}
         </h3>
-        <p className="text-muted-foreground leading-relaxed">
+        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
           {service.description}
         </p>
       </motion.div>
     ))}
   </div>
 </motion.div>
+
 
       </div>
     </div>
