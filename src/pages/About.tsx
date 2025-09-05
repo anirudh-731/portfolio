@@ -27,39 +27,40 @@ const About = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Profile Image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="relative"
-          >
-            <div className="gradient-card rounded-2xl p-10 text-center">
-              <div className="w-64 h-64 mx-auto bg-primary/20 rounded-full flex items-center justify-center glow-primary">
-                <span className="text-6xl">👨‍💻</span>
-              </div>
-            </div>
-          </motion.div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 items-center mb-16 px-4 sm:px-6">
+  {/* Profile Image */}
+  <motion.div
+    initial={{ opacity: 0, scale: 0.8 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ delay: 0.2, duration: 0.6 }}
+    className="relative flex justify-center lg:justify-start mb-8 lg:mb-0"
+  >
+    <div className="gradient-card rounded-2xl p-8 sm:p-10 text-center">
+      <div className="w-48 h-48 sm:w-64 sm:h-64 bg-primary/20 rounded-full flex items-center justify-center glow-primary mx-auto">
+        <span className="text-5xl sm:text-6xl">👨‍💻</span>
+      </div>
+    </div>
+  </motion.div>
 
-          {/* About Text */}
-          <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
-            className="space-y-6"
-          >
-            <h2 className="text-3xl font-bold text-foreground">
-              Hello! I'm a Software Developer
-            </h2>
-            
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                With a strong foundation in development, I specialize in building modern, responsive, and user-friendly applications using technologies like React, Next.js, Node.js, and cloud deployment platforms. Driven by curiosity and creativity, I craft digital experiences that are both functional and visually engaging, turning real-world problems into innovative solutions.
-              </p>
-            </div>
-          </motion.div>
-        </div>
+  {/* About Text */}
+  <motion.div
+    initial={{ opacity: 0, y: 60 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
+    className="space-y-4 sm:space-y-6 text-center lg:text-left"
+  >
+    <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
+      Hello! I'm a Software Developer
+    </h2>
+
+    <div className="space-y-3 sm:space-y-4 text-muted-foreground leading-relaxed text-sm sm:text-base">
+      <p>
+        With a strong foundation in development, I specialize in building modern, responsive, and user-friendly applications using technologies like React, Next.js, Node.js, and cloud deployment platforms. Driven by curiosity and creativity, I craft digital experiences that are both functional and visually engaging, turning real-world problems into innovative solutions.
+      </p>
+    </div>
+  </motion.div>
+</div>
+
 
         {/* What I Do */}
         <motion.div
