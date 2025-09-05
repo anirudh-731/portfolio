@@ -9,7 +9,7 @@ interface Project {
   image: string;
   tech: string[];
   github: string;
-  live: string;
+
 }
 
 const ProjectCard = ({ project, index }: { project: Project, index: number }) => {
@@ -128,16 +128,6 @@ const ProjectCard = ({ project, index }: { project: Project, index: number }) =>
               whileHover={{ scale: 1.05, x: 2 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button
-                size="sm"
-                className="flex-1 gradient-primary text-primary-foreground hover:scale-105 transition-transform"
-                asChild
-              >
-                <a href={project.live} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Live
-                </a>
-              </Button>
             </motion.div>
           </motion.div>
         </div>
@@ -149,52 +139,45 @@ const ProjectCard = ({ project, index }: { project: Project, index: number }) =>
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and PostgreSQL",
-      image: "🛒",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      github: "#",
-      live: "#"
+      title: "Anonex",
+      description: "AI-powered anonymous feedback platform: share your link, get feedback, and let AI craft thoughtful replies.",
+      image: "🗨️",
+      tech: ["Nextjs", "TypeScript", "MongoDB", "Resend", "OenAI API", "Mongoose"],
+      github: "https://github.com/anirudh-731/anonex",
+    
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management with real-time updates using Socket.io",
-      image: "📝",
-      tech: ["React", "Socket.io", "MongoDB", "Express"],
-      github: "#",
-      live: "#"
-    },
-    {
-      title: "AI Chat Application",
-      description: "Intelligent chatbot with natural language processing capabilities",
-      image: "🤖",
-      tech: ["React", "Python", "OpenAI", "FastAPI"],
-      github: "#",
-      live: "#"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Real-time weather data visualization with interactive maps",
-      image: "🌤️",
-      tech: ["Vue.js", "D3.js", "Weather API", "Tailwind"],
-      github: "#",
-      live: "#"
-    },
-    {
-      title: "Portfolio Website",
-      description: "Responsive portfolio with 3D animations and particle effects",
-      image: "🎨",
-      tech: ["React", "Three.js", "Framer Motion", "Tailwind"],
-      github: "#",
-      live: "#"
-    },
-    {
-      title: "Crypto Tracker",
-      description: "Cryptocurrency price tracking with real-time charts",
+      title: "WexFord",
+      description: "A secure Razorpay-integrated NextAuth app for seamless authentication and payment handling.",
       image: "💰",
-      tech: ["React", "Chart.js", "CoinGecko API", "Redux"],
-      github: "#",
-      live: "#"
+      tech: [ "Next.js", "NextAuth", "Tailwind CSS", "Razorpay", "Mongoose", "MongoDB"],
+      github: "https://github.com/anirudh-731/WexFord",
+    
+    },
+  
+    {
+      title: "BitTree",
+      description: "A Next.js & MongoDB-powered Linktree clone to organize and showcase multiple links in one place.",
+      image: "🌳",
+      tech: ["Next.js", "Tailwind CSS", "MongoDB", "Lucide-react", "Framer-motion"],
+      github: "https://github.com/anirudh-731/bittree",
+    
+    },
+    {
+      title: "BitLinks",
+      description: "A URL shortener built with Next.js & MongoDB for creating and managing concise, shareable links.",
+      image: "🔗",
+      tech: ["Next.js", "Tailwind CSS", "MongoDB", "Lucide-react"],
+      github: "https://github.com/anirudh-731/bitlinks",
+    
+    },
+    {
+      title: "VaultX",
+      description: "A robust password manager that safely stores and manages user credentials with encryption and easy access.",
+      image: "🔒",
+      tech: ["React", "Tailwind CSS", "Toastify", "Vite"],
+      github: "https://github.com/anirudh-731/vaultx",
+    
     }
   ];
 

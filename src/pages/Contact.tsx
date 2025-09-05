@@ -31,19 +31,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com"
+      value: "ani.m.rao@example.com",
+      href: "#"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 6379097391",
+      href: "#"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "New York, NY",
+      value: "Chennai, India",
       href: "#"
     }
   ];
@@ -52,18 +52,13 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/yourusername"
+      href: "https://github.com/anirudh-731/"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/yourusername"
+      href: "https://www.linkedin.com/in/anirudh-m-rao-70697724b/"
     },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/yourusername"
-    }
   ];
 
   return (
@@ -91,11 +86,12 @@ const Contact = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
           >
+
+            <span className='text-lg ml-2'>*This feature is coming soon*</span>
             <Card className="gradient-card p-8">
               <h2 className="text-3xl font-bold text-foreground mb-6">
                 Send Me a Message
               </h2>
-              
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>

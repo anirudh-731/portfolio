@@ -24,9 +24,8 @@ const Hero = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="space-y-2"
             >
-              <p className="text-accent font-medium text-lg">Hello, I'm</p>
               <h1 className="text-6xl lg:text-7xl font-bold text-gradient">
-                Your Name
+                Anirudh M Rao
               </h1>
               <h2 className="text-3xl lg:text-4xl font-semibold text-foreground/90">
                 Full Stack Developer
@@ -40,7 +39,7 @@ const Hero = () => {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="text-xl text-muted-foreground leading-relaxed max-w-lg"
             >
-              I create exceptional digital experiences through innovative web development, 
+              I create exceptional digital experiences through innovative web development,
               combining creativity with cutting-edge technology to bring ideas to life.
             </motion.p>
 
@@ -61,15 +60,18 @@ const Hero = () => {
                   Hire Me
                 </Link>
               </Button>
-              
+
               <Button
                 variant="outline"
                 size="lg"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
               >
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
+                <a href="/Anirudh_Resume.pdf" download className="flex items-center">
+                  <Download className="mr-2 h-5 w-5" />
+                  Download Resume
+                </a>
               </Button>
+
             </motion.div>
 
             {/* Quick Links */}
@@ -79,15 +81,15 @@ const Hero = () => {
               transition={{ delay: 0.8, duration: 0.6 }}
               className="flex items-center space-x-6"
             >
-              <Link 
-                to="/projects" 
+              <Link
+                to="/projects"
                 className="text-accent hover:text-accent/80 transition-colors flex items-center group"
               >
                 View My Work
                 <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link 
-                to="/about" 
+              <Link
+                to="/about"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 Learn More About Me
@@ -104,14 +106,14 @@ const Hero = () => {
           >
             <div className="relative gradient-card rounded-2xl p-8 glow-primary">
               <Scene3D className="w-full h-96" />
-              
+
               {/* Floating elements */}
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 className="absolute -top-4 -right-4 w-16 h-16 bg-accent/20 rounded-full glow-cyan"
               />
-              
+
               <motion.div
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}

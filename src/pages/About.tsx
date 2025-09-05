@@ -35,7 +35,7 @@ const About = () => {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="relative"
           >
-            <div className="gradient-card rounded-2xl p-8 text-center">
+            <div className="gradient-card rounded-2xl p-10 text-center">
               <div className="w-64 h-64 mx-auto bg-primary/20 rounded-full flex items-center justify-center glow-primary">
                 <span className="text-6xl">👨‍💻</span>
               </div>
@@ -55,22 +55,12 @@ const About = () => {
             
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                With over 5 years of experience in web development, I specialize in creating 
-                scalable and user-friendly applications using modern technologies like React, 
-                Node.js, and cloud services.
+                With a strong foundation in development, I specialize in building modern, responsive, and user-friendly applications using technologies like React, Next.js, Node.js, and cloud deployment platforms.
+              </p>
+              <p>
+                I enjoy combining creativity with cutting-edge tools to create digital experiences that are functional & visually engaging. My journey started with a curiosity about how software applicatons work, and it has grown into a passion for solving real-world problems through innovative development. 
               </p>
               
-              <p>
-                My journey began with a curiosity about how websites work, and it has evolved 
-                into a passion for building digital solutions that make a difference. I love 
-                turning complex problems into simple, beautiful, and intuitive designs.
-              </p>
-              
-              <p>
-                When I'm not coding, you can find me exploring new technologies, contributing 
-                to open-source projects, or sharing knowledge through technical writing and 
-                mentoring.
-              </p>
             </div>
           </motion.div>
         </div>
