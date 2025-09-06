@@ -28,7 +28,7 @@ const Hero = () => {
                 Anirudh M Rao
               </h1>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground/90">
-                Full Stack Developer
+                Software Developer
               </h2>
             </motion.div>
 

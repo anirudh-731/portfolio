@@ -32,7 +32,7 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "ani.m.rao@example.com",
+      value: "ani.m.rao@gmail.com",
       href: "#"
     },
     {
