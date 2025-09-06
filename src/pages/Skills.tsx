@@ -19,7 +19,7 @@ const Skills = () => {
         { name: "Next.js", icon: "▲" },
          { name: "TypeScript", icon: "📘" },
         { name: "MongoDB", icon: "🍃" },
-        { name: "MySQL", icon: "🐘" },
+        { name: "MySQL", icon: "🐬" },
         { name: "Express Js", icon: "𝐄𝐱" },
         { name: "Tailwind CSS", icon: "🎨" },
         { name: "HTML", icon: "<>" },
