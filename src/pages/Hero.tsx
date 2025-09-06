@@ -57,7 +57,7 @@ const Hero = () => {
               >
                 <Link to="/contact">
                   <Mail className="mr-2 h-5 w-5" />
-                  Hire Me
+                  Contact Me
                 </Link>
               </Button>
 
