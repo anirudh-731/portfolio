@@ -143,7 +143,7 @@ const Projects = () => {
       description: "AI-powered anonymous feedback platform: share your link, get feedback, and let AI craft thoughtful replies.",
       image: "🗨️",
       tech: ["Nextjs", "TypeScript", "MongoDB", "Resend", "OenAI API", "Mongoose"],
-      github: "https://github.com/anirudh-731/anonex",
+      github: "https://github.com/anirudh-731/anonex_",
     
     },
     {
